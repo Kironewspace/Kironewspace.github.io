@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <style>
+            .thumb {
+              height:300px;
+              border: 1px solid #000;
+              margin: 5px 5px 0 0;
+            }
+          </style>
+        <title>infochads corporation</title>
+        <meta name="author" content="pagina web de miguel angel"/>
+        
+    </head>
+    </head>
+    <body bgcolor="white">
+        <center><h1><font face="Ebrima"><font color="00AEFF">Formulario InfoChads</center></h1></font></font>
+        <center><img src="https://www.int-furndirect.com/images/IFD_logo.png" widht="150" height="160"></a></center>
+        <center><h2><font face="Ebrima"> <font color="00AEFF">Formulario de Solicitud de Empleo para la empresa InfoChad</center></h2></font></font>
+        <!--aqui pongo la etiqueta "<form"-->
+                <form target="_blank" action="pagina donde llegara el formulario.html" method="get">
+            <h4>Datos del solicitante al puesto:</h4>
+            <table>
+            <fieldset>
+                <label for="Nombre">nombre</label>
+                <input type="text" name="nombre" id="Nombre" size="40" required="" placeholder="escribe tu nombre aquí">
+                <br>
+                <br>
+                <label for="Apellido">apellido</label>
+                <input type="text" name="apellido" id="Apellido" size="40" required="" placeholder="escribe tu apellido aquí">
+                <br>
+                <br>
+                <label for="Edad">edad</label>
+                <input type="number" name="edad" id="Edad" min="18" max="56" required="" placeholder="pon tu edad aquí">
+                <br>
+                <br>
+                <label for="fecha de nacimiento">fecha de nacimiento</label> 
+                <input type="date" name="fecha de nacimiento" value="2004-01-01" min="1966-01-01" max="2004-01-01">
+                <br>
+                <br>
+                <label for="phone">número de teléfono</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="" placeholder="escribe tu número de teléfono aquí">
+                   <small>Format: 123-456-7890</small>
+                   <br>
+                   <br>
+                   <label for="Correo">Correo electronico</label>
+                   <input type="mail" name="correo" id="Correo" placeholder="pon tu correo aquí" id="Correo" required>
+                   <br>
+                   <br>
+                   <label for="Sexo">Sexo del solicitante</label>
+                   <input type="radio" name="sex" value="h">Hombre
+                   <input type="radio" name="sex" value="n">mujer
+                <br>
+                <br>
+                <label for="Dirección">dirección del solicitante de empleo</label>
+                <input type="text" name="dirección" placeholder="pon tu dirección aquí" id="Dirección" size="50">
+                <br>
+                <br>
+                <label for="País de origen">País de origen</label>
+                <!--aqui uso la etiqueta select-->
+                <select id="País de origen" placeholder="pon tu país aquí">
+                    <option selected>Republica Dominicana</option>
+                    <option>Estados Unidos (E.E.U.U)</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                    <option>Uruguay</option>
+                    <option>Argentina</option>
+                    <option>Perú</option>
+                    <option>Suiza</option>
+                    <option>Japon</option>
+                    <option>Noruega</option>
+                    <option>otro, especifiqué abajo</option>
+                </select>
+                <br>
+                <br>
+                <label for="Especifica tu país">especifiqué su país(opcional)</label>
+                <input type="text" name="país del solicitante"  id="Especifica tu país" placeholder="especifica tu país" size="30">
+                <br>
+                <br>
+                <label for="Puesto al que desea aplicar">puesto al que deseas aplicar</label>
+                <select id="Puesto al que deseas aplicar">
+                    <option>Programador</option>
+                    <option>Analista</option>
+                    <option selected>diseñador de páginas web</option>
+                    <option>Contador</option>
+                    <option>secretario/a</option>
+                <option>Callcenter</option>
+                <option>diseñador gráfico</option>
+                <option>Arquitecto cloud</option>
+                <option>Especialistas en datos</option>
+                <option>profesional de asistencia y soporte técnico</option>
+                </select>
+                <br>
+                <br>
+                <b><p>imagen del solicitante</p></b>
+                <input type="file" id="files" name="files[]" />
+                <br />
+                <output id="list"></output>
+            </fieldset>
+            <br>
+            <br>
+            <br>
+            <h4>Experiencia laboral</h4>
+            <fieldset>
+                <label for="Institución donde estudio">institución donde estudiaste</label>
+                <select id="Institución donde estudio">
+                    <option>Politecnico Maximo Gomez</option>
+                    <option>Colegio Jesús Te Ama</option>
+                    <option>Escuela Canada</option>
+                    <option>Liceo Francisco Gregorio Billini</option>
+                    <option>Colegio Matrisa</option>
+                </select>
+                <br>
+                <br>
+                <label for="Carrera de formación">tu carrera de formacion</label>
+                <select id="Carrera de formación">
+                    <option>Marketing Digital</option>
+                    <option> Ingeniería en Informática</option>
+                    <option>Desarrollo de Aplicaciones Multiplataforma</option>
+                    <option>Ingeniería Electrónica</option>
+                    <option>Ingeniería Mecatrónica</option>
+                    <option>Ingeniería en sistemas</option>
+                    <option>Tecnología en Telecomunicaciones</option>
+                    <option>Tecnología en Electromecánica</option>
+                    <option>Tecnología en Instrumentación Electrónica</option>
+                    <option>Tecnología en Análisis Ambientales</option>
+                </select>
+                <br>
+                <br>
+                <label for="Idiomas que domina el solicitante">idiomas que hablas</label>
+                <!--aqui uso el checkbox-->
+                <input type="checkbox" name="idioma"/>español
+                <br>
+                <input type="checkbox" name="idioma"/>inglés
+                <br> 
+                <input type="checkbox" name="idioma"/>portugues
+                <br>
+                <input type="checkbox" name="idioma"/>Frances
+                <br>
+                <input type="checkbox" name="idioma"/>Japones
+                <br>
+                <br>
+                <label for="País de origen">País de origen</label>
+                <select id="País de origen" placeholder="pon tu país aquí">
+                    <option selected>Republica Dominicana</option>
+                    <option>Estados Unidos (E.E.U.U)</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                    <option>Uruguay</option> 
+                    <option>Argentina</option>
+                    <option>Perú</option>
+                    <option>Suiza</option>
+                    <option>Japon</option>
+                    <option>Noruega</option>
+                    <option>otro, especifiqué abajo</option>
+                </select>
+                <br>
+                <br>
+                <label for="Especifica tu país">especifiqué su país(opcional)</label>
+                <input type="text" name="país del solicitante"  id="Especifica tu país" placeholder="especifica tu país" size="30">
+
+
+            </fieldset>
+            <textarea rows="10"placeholder="escirbe alguna duda, dato o comentario sobre el empleo en nuestra empresa"></textarea>
+            <br>
+            <input type="submit" value="enviar" target="_blank" action="pagina donde llegara el formulario.html">
+            <input type="reset" value="borrar">
+        </form>
+        <center><a href="mailto:miguelangeltejeda983@gmail.com">contacto con soporte técnico</a></center>
+        <script>
+            function archivo(evt) {
+                var files = evt.target.files; // FileList object
+           
+                // Obtenemos la imagen del campo "file".
+                for (var i = 0, f; f = files[i]; i++) {
+                  //Solo admitimos imágenes.
+                  if (!f.type.match('image.*')) {
+                      continue;
+                  }
+           
+                  var reader = new FileReader();
+           
+                  reader.onload = (function(theFile) {
+                      return function(e) {
+                        // Insertamos la imagen
+                       document.getElementById("list").innerHTML = ['<img class="thumb" src="', e.target.result,'" title="', escape(theFile.name), '"/>'].join('');
+                      };
+                  })(f);
+           
+                  reader.readAsDataURL(f);
+                }
+            }
+           
+            document.getElementById('files').addEventListener('change', archivo, false);
+    </script>
+        </body>
+        </html>
+        
